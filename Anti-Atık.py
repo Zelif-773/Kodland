@@ -24,8 +24,8 @@ async def geridönüşüm(ctx):
 async def yardım(ctx):
     await ctx.send(f"""Dünyaya katkı sağlamak için kullanabileceğin komutlar (sanırım)
 1. #geridönüşüm
-    2. #sıfıratık
-    3. #öneri
+2. #sıfıratık
+3. #öneri
                 
 [Daha fazlası için beklemede kalın, teşekkürler]""")
 
