@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #85d43b;
+    background-image: url("../img/eco_bg.png");
+    color: #EB8028;
+}
+
+h1, h2, p{
+    margin: 1;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.back_link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 0;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #0EB07C;
+    align-items:center;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.back_link :hover {
+    background-color: #45a049;
+}
