@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta     
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Portföy</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home">HOME</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">ABOUT</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#skills">MY FAVORITES</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Önizleme bölümü -->
+      <section class="main__home home" id="home">
+        <h1 class="home__title">ZEYNEP ELİF BAYRAK</h1>
+        <p class="home__subtitle">GAME-DEVELOPER</p>
+      </section>
+      <!-- Hakkımda bölümü -->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">ABOUT ME</h2>
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            My name is Zeynep Elif, and I am a rookie programmer. I am a middle school student, and I am 13 years old. I am interested in programming and learning programming languages. For example, I know Python, HTML, CSS, and a few others. I am also interested in game development. I develop games with Unity because I love it. What else do I love? Playing games! In my free time, I play games like Undertale, Hollow Knight, OneShot etc.'
+          </p>
+          <img
+            class="info-block__img"
+            src="../static/img/luffy.png"
+            alt="me"
+            width="500"
+            height="500"
+          />
+        </div>
+      </section>
+      <!-- Beceriler bölümü -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">MY FAVORITES</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/unity.png"
+                alt="unity"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Unity</span>
+              <input class="skill__button" type="submit" name="button_unity" value="SHOW PROJECT">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/oneshot.png"
+                alt="oneshot"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">OneShot</span>
+              <input class="skill__button" type="submit" name="button_oneshot" value="SHOW">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/Undertale.png"
+                alt="Undertale"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Undertale</span>
+              <input class="skill__button" type="submit" name="button_undertale" value="SHOW">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/hk-ico.png"
+                alt="Hollow_Knight"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Hollow Knight</span>
+              <input class="skill__button" type="submit" name="button_hk" value="SHOW">
+            </li>
+          </ul>
+        </form>
+        {% if button_unity%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/python-project.png" alt="project" width="500">
+              <a class="project__link" href="">Open whit Github</a>
+          </div>
+        {% endif %}
+
+        {% if button_oneshot%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/oneshot-info.jpg" alt="project" width="500">
+              <a class="project__link" href="https://store.steampowered.com/app/420530/OneShot/">Steam Download Link</a>
+          </div>
+        {% endif %}
+
+        {% if button_undertale%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/undertale-info.png" alt="project" width="500">
+              <a class="project__link" href="https://store.steampowered.com/app/391540/Undertale/">Steam Download Link</a>
+          </div>
+        {% endif %}
+
+        {% if button_hk%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/hk-info.png" alt="project" width="500">
+              <a class="project__link" href="https://store.steampowered.com/app/367520/Hollow_Knight/">Steam Download Link</a>
+          </div>
+        {% endif %}
+
+      </section>
+      <!-- Geri bildirim formu -->
+      <section class="main__feedback feedback" id="feedback">
+        <h2 class="feedback__title">FEEDBACK</h2>
+        <form action="" method="POST" class="feedback__form form">
+          <label for="email">
+            <input type="email" class="form__input" name="email" id="email" placeholder="E-mail" required>
+          </label>
+          <label for="text">
+            <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Comment"></textarea>
+          </label>
+          <button class="form__button" type="submit">SEND</button>
+        </form>
+      </section>
+    </main>
+    <!-- Sosyal medya bağlantıları için bir alt bilgi -->
+    <footer>
+
+    </footer>
+  </body>
+</html>
